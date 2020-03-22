@@ -25,3 +25,36 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+## Type scripts 
+Constructor 
+ constructor(private appConstants: AppConstants, private contractConstatnts: ContractConstants , private dateService: SmartDateService)
+
+ Property :any={
+    Id:1,
+    Name:'Birala house',
+    Type:"House",
+    Price:12000
+  }
+Properties:Array<any>=[
+				{
+				  Id:1,
+				  Name:'Birala house',
+				  Type:"House",
+				  Price:12000
+				},
+				{
+				  Id:2,
+				  Name:'Silicon house',
+				  Type:"House",
+				  Price:13000
+				}
+	]
+	*ngFor(press a-ngFor)
+	<div *ngFor="let Property of Properties" class="shadow-lg col-sm-4 p-3">
+	
+	@Input() Property:any
+	
+	
