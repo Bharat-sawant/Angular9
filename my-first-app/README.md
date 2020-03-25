@@ -29,6 +29,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## Type scripts 
+varable :
+ public showAttachmentPopupFromMemory: boolean = false;
+ config:any = {};
+ public attachmentURLs = [];
+  public URLArray: Array<string> = [];
 Constructor 
  constructor(private appConstants: AppConstants, private contractConstatnts: ContractConstants , private dateService: SmartDateService)
 
@@ -58,3 +63,17 @@ Properties:Array<any>=[
 	@Input() Property:any
 	
 	
+	inheritance
+	export class ContractBulkUploadComponent  implements OnInit, OnDestroy, AfterViewInit{
+	
+
+var listEntityUOM = new object();
+listEntityUOM = (from UnitOfMeasure objUnitOfMeasure in lstEntityUOM
+                                     where (objUnitOfMeasure.UOMDescription.ToLower().Contains(Searchtext.ToLower())
+                                            || objUnitOfMeasure.UOMCode.ToLower().Contains(Searchtext.ToLower()))
+                                     select new
+                                     {
+                                         label = string.Empty,
+                                         value = objUnitOfMeasure.UOMDescription,
+                                         UOMCode = objUnitOfMeasure.UOMCode
+                                     }).ToList().Take(10);
